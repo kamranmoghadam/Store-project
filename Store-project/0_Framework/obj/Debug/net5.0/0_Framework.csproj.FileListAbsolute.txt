@@ -1,0 +1,12 @@
+D:\Store project\Store-project\0_Framework\bin\Debug\net5.0\0_Framework.deps.json
+D:\Store project\Store-project\0_Framework\bin\Debug\net5.0\0_Framework.dll
+D:\Store project\Store-project\0_Framework\bin\Debug\net5.0\ref\0_Framework.dll
+D:\Store project\Store-project\0_Framework\bin\Debug\net5.0\0_Framework.pdb
+D:\Store project\Store-project\0_Framework\obj\Debug\net5.0\0_Framework.csproj.AssemblyReference.cache
+D:\Store project\Store-project\0_Framework\obj\Debug\net5.0\0_Framework.GeneratedMSBuildEditorConfig.editorconfig
+D:\Store project\Store-project\0_Framework\obj\Debug\net5.0\0_Framework.AssemblyInfoInputs.cache
+D:\Store project\Store-project\0_Framework\obj\Debug\net5.0\0_Framework.AssemblyInfo.cs
+D:\Store project\Store-project\0_Framework\obj\Debug\net5.0\0_Framework.csproj.CoreCompileInputs.cache
+D:\Store project\Store-project\0_Framework\obj\Debug\net5.0\0_Framework.dll
+D:\Store project\Store-project\0_Framework\obj\Debug\net5.0\ref\0_Framework.dll
+D:\Store project\Store-project\0_Framework\obj\Debug\net5.0\0_Framework.pdb
