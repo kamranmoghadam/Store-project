@@ -1,32 +1,35 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using _0_Framework.Application;
 using ShopManagement.Application.Contracts.Product;
 using ShopManagement.Domain.ProductAgg;
+using ShopManagement.Domain.ProductCategoryAgg;
 
 namespace ShopManagement.Application
 {
     public class ProductApplication : IProductApplication
     {
         private readonly IProductRepository _productRepository;
-
-        public ProductApplication(IProductRepository productRepository)
+        private readonly IProductCategoryRepository _productCategoryRepository;
+        public ProductApplication(IProductRepository productRepository, IProductCategoryRepository productCategoryRepository)
         {
             _productRepository = productRepository;
+            _productCategoryRepository = productCategoryRepository;
         }
 
         public OperationResult Create(CreateProduct command)
         {
-            var operation=new OperationResult();
+            var operation = new OperationResult();
             if (_productRepository.Exists(x => x.Name == command.Name))
                 return operation.Failed(ApplicationMessages.DuplicatedRecord);
+
             var slug = command.Slug.Slugify();
-            var product = new Product(command.Name, command.Code, command.ShortDescription,
-                command.MetaDescription, command.Picture, command.PictureAlt, command.PictureTitle,
-                command.CategoryId,slug, command.Keywords, command.MetaDescription);
+            var categorySlug = _productCategoryRepository.GetSlugById(command.CategoryId);
+            var path = $"{categorySlug}//{slug}";
+            //var picturePath = _fileUploader.Upload(command.Picture, path);
+            var product = new Product(command.Name, command.Code,
+                command.ShortDescription, command.Description, command.Picture,
+                command.PictureAlt, command.PictureTitle, command.CategoryId, slug,
+                command.Keywords, command.MetaDescription);
             _productRepository.Create(product);
             _productRepository.SaveChanges();
             return operation.Succedded();
@@ -35,17 +38,24 @@ namespace ShopManagement.Application
         public OperationResult Edit(EditProduct command)
         {
             var operation = new OperationResult();
-            var product = _productRepository.Get(command.Id);
-            if (product != null)
+            var product = _productRepository.GetProductWithCategory(command.Id);
+            if (product == null)
                 return operation.Failed(ApplicationMessages.RecordNotFound);
-            if (_productRepository.Exists(x=>x.Name==command.Name&&x.Id!=command.Id))
+
+            if (_productRepository.Exists(x => x.Name == command.Name && x.Id != command.Id))
                 return operation.Failed(ApplicationMessages.DuplicatedRecord);
+
             var slug = command.Slug.Slugify();
-           product.Edit(command.Name, command.Code, command.ShortDescription,
-               command.MetaDescription, command.Picture, command.PictureAlt, command.PictureTitle,
-               command.CategoryId, slug, command.Keywords, command.MetaDescription);
-           _productRepository.SaveChanges();
-           return operation.Succedded();
+            var path = $"{product.Category.Slug}/{slug}";
+
+           // var picturePath = _fileUploader.Upload(command.Picture, path);
+            product.Edit(command.Name, command.Code,
+                command.ShortDescription, command.Description, command.Picture,
+                command.PictureAlt, command.PictureTitle, command.CategoryId, slug,
+                command.Keywords, command.MetaDescription);
+
+            _productRepository.SaveChanges();
+            return operation.Succedded();
         }
 
         public EditProduct GetDetails(long id)

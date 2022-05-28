@@ -17,3 +17,5 @@ D:\Store project\Store-project\ShopManagement.Application\obj\Debug\net5.0\ShopM
 D:\Store project\Store-project\ShopManagement.Application\obj\Debug\net5.0\ShopManagement.Application.dll
 D:\Store project\Store-project\ShopManagement.Application\obj\Debug\net5.0\ref\ShopManagement.Application.dll
 D:\Store project\Store-project\ShopManagement.Application\obj\Debug\net5.0\ShopManagement.Application.pdb
+D:\Store project\Store-project\ShopManagement.Application\bin\Debug\net5.0\ShopManagement.Infrastructure.EFCore.dll
+D:\Store project\Store-project\ShopManagement.Application\bin\Debug\net5.0\ShopManagement.Infrastructure.EFCore.pdb

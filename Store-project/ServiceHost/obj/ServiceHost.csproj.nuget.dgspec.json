@@ -254,6 +254,9 @@
               },
               "D:\\Store project\\Store-project\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
                 "projectPath": "D:\\Store project\\Store-project\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
+              },
+              "D:\\Store project\\Store-project\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "D:\\Store project\\Store-project\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj"
               }
             }
           }
