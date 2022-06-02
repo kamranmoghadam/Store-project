@@ -31,3 +31,5 @@ D:\Store project\Store-project\ShopManagement.Configuration\obj\Debug\net5.0\Sho
 D:\Store project\Store-project\ShopManagement.Configuration\obj\Debug\net5.0\ref\ShopManagement.Configuration.dll
 D:\Store project\Store-project\ShopManagement.Configuration\obj\Debug\net5.0\ShopManagement.Configuration.pdb
 D:\Store project\Store-project\ShopManagement.Configuration\obj\Debug\net5.0\ShopManagement.Configuration.genruntimeconfig.cache
+D:\Store project\Store-project\ShopManagement.Configuration\bin\Debug\net5.0\_01_Store_Project_Query.dll
+D:\Store project\Store-project\ShopManagement.Configuration\bin\Debug\net5.0\_01_Store_Project_Query.pdb

@@ -9,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using _0_Framework.Application;
 
 namespace ServiceHost
 {
@@ -26,6 +27,7 @@ namespace ServiceHost
         {
             var connectionString = Configuration.GetConnectionString("Store-projectDb");
             ShopManagementBootstrapper.Configure(services, connectionString);
+            services.AddTransient<IFileUploader, FileUploader>();
             services.AddRazorPages();
         }
 
