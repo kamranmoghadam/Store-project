@@ -198,7 +198,6 @@ D:\Store project\Store-project\ServiceHost\bin\Debug\net5.0\_01_Store_Project_Qu
 D:\Store project\Store-project\ServiceHost\bin\Debug\net5.0\_01_Store_Project_Query.pdb
 D:\Store project\Store-project\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\Slide\Default.cshtml.g.cs
 D:\Store project\Store-project\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\Menu\Default.cshtml.g.cs
-D:\Store project\Store-project\ServiceHost\obj\Debug\net5.0\ServiceHost.MvcApplicationPartsAssemblyInfo.cs
 D:\Store project\Store-project\ServiceHost\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.dll
 D:\Store project\Store-project\ServiceHost\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
 D:\Store project\Store-project\ServiceHost\bin\Debug\net5.0\System.IO.Pipelines.dll
@@ -219,3 +218,13 @@ D:\Store project\Store-project\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administ
 D:\Store project\Store-project\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Discounts\CustomerDiscounts\Create.cshtml.g.cs
 D:\Store project\Store-project\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Discounts\CustomerDiscounts\Edit.cshtml.g.cs
 D:\Store project\Store-project\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Discounts\CustomerDiscounts\Index.cshtml.g.cs
+D:\Store project\Store-project\ServiceHost\bin\Debug\net5.0\InventoryManagement.Application.Contract.dll
+D:\Store project\Store-project\ServiceHost\bin\Debug\net5.0\InventoryManagement.Application.dll
+D:\Store project\Store-project\ServiceHost\bin\Debug\net5.0\InventoryManagement.Domain.dll
+D:\Store project\Store-project\ServiceHost\bin\Debug\net5.0\InventoryManagement.Infrastructure.Configuration.dll
+D:\Store project\Store-project\ServiceHost\bin\Debug\net5.0\InventoryMangement.Infrastructure.EFCore.dll
+D:\Store project\Store-project\ServiceHost\bin\Debug\net5.0\InventoryManagement.Infrastructure.Configuration.pdb
+D:\Store project\Store-project\ServiceHost\bin\Debug\net5.0\InventoryManagement.Application.pdb
+D:\Store project\Store-project\ServiceHost\bin\Debug\net5.0\InventoryManagement.Application.Contract.pdb
+D:\Store project\Store-project\ServiceHost\bin\Debug\net5.0\InventoryManagement.Domain.pdb
+D:\Store project\Store-project\ServiceHost\bin\Debug\net5.0\InventoryMangement.Infrastructure.EFCore.pdb

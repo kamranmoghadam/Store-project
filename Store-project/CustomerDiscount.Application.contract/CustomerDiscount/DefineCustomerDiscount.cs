@@ -19,7 +19,9 @@ namespace DiscountManagement.Application.Contract.CustomerDiscount
         [Required(ErrorMessage = ValidationMessages.IsRequired)]
         public string EndDate { get; set; }
 
+        [Required(ErrorMessage = ValidationMessages.IsRequired)]
         public string Reason { get; set; }
+
         public List<ProductViewModel> Products { get; set; }
     }
 }
