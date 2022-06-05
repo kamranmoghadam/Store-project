@@ -1,4 +1,5 @@
-﻿using _01_Store_Project_Query.Contracts.Slide;
+﻿using _01_Store_Project_Query.Contracts.ProductCategory;
+using _01_Store_Project_Query.Contracts.Slide;
 using _01_Store_Project_Query.Query;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -33,6 +34,7 @@ namespace ShopManagement.Configuration
             services.AddTransient<ISlideRepository, SlideRepository>();
 
             services.AddTransient<ISlideQuery, SlideQuery >();
+           // services.AddTransient<IProductCategoryQuery, ProductCategoryQuery >();
             services.AddDbContext<ShopContext>(x => x.UseSqlServer(ConnectionString));
         }
     }

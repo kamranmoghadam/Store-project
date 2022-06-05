@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+		<PackageReference Include="MongoDB.Driver.Core" Version="2.15.1" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+    <ProjectReference Include="..\CustomerDiscount.Application.contract\DiscountManagement.Application.contract.csproj" />
+    <ProjectReference Include="..\DiscountManagement.Application\DiscountManagement.Application.csproj" />
+    <ProjectReference Include="..\DiscountManagement.Domain\DiscountManagement.Domain.csproj" />
+    <ProjectReference Include="..\DiscountManagement.Infrastructure.EFCore\DiscountManagement.Infrastructure.EFCore.csproj" />
+  </ItemGroup>
+
+</Project>

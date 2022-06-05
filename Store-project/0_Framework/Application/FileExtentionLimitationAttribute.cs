@@ -16,8 +16,7 @@ namespace _0_Framework.Application
 
         public override bool IsValid(object value)
         {
-            var file = value as IFormFile;
-            if (file == null) return true;
+            if (value is not IFormFile file) return true;
             var fileExtention = Path.GetExtension(file.FileName);
             return _validExtentions.Contains(fileExtention);
         }
