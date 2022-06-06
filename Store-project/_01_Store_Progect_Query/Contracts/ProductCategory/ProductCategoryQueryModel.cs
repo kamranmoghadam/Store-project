@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using _01_Store_Project_Query.Contracts.Product;
+using System.Collections.Generic;
 
 namespace _01_Store_Project_Query.Contracts.ProductCategory
 {
@@ -13,6 +14,6 @@ namespace _01_Store_Project_Query.Contracts.ProductCategory
         public string Keywords { get; set; }
         public string MetaDescription { get; set; }
         public string Description { get; set; }
-        //public List<ProductQueryModel> Products { get; set; }
+        public List<ProductQueryModel> Products { get; set; }
     }
 }

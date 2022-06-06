@@ -11,9 +11,9 @@ namespace ServiceHost.Pages
         //    _emailService = emailService;
         //}
 
-        //public void OnGet()
-        //{
-        //    //_emailService.SendEmail("salam", "salam salam", "contact@atriya.com");
-        //}
+        public void OnGet()
+        {
+            //_emailService.SendEmail("salam", "salam salam", "contact@atriya.com");
+        }
     }
 }

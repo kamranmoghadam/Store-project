@@ -19,3 +19,15 @@ D:\Store project\Store-project\_01_Store_Progect_Query\obj\Debug\net5.0\_01_Stor
 D:\Store project\Store-project\_01_Store_Progect_Query\obj\Debug\net5.0\_01_Store_Project_Query.dll
 D:\Store project\Store-project\_01_Store_Progect_Query\obj\Debug\net5.0\ref\_01_Store_Project_Query.dll
 D:\Store project\Store-project\_01_Store_Progect_Query\obj\Debug\net5.0\_01_Store_Project_Query.pdb
+D:\Store project\Store-project\_01_Store_Progect_Query\bin\Debug\net5.0\DiscountManagement.Application.contract.dll
+D:\Store project\Store-project\_01_Store_Progect_Query\bin\Debug\net5.0\DiscountManagement.Domain.dll
+D:\Store project\Store-project\_01_Store_Progect_Query\bin\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.dll
+D:\Store project\Store-project\_01_Store_Progect_Query\bin\Debug\net5.0\InventoryManagement.Application.Contract.dll
+D:\Store project\Store-project\_01_Store_Progect_Query\bin\Debug\net5.0\InventoryManagement.Domain.dll
+D:\Store project\Store-project\_01_Store_Progect_Query\bin\Debug\net5.0\InventoryMangement.Infrastructure.EFCore.dll
+D:\Store project\Store-project\_01_Store_Progect_Query\bin\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.pdb
+D:\Store project\Store-project\_01_Store_Progect_Query\bin\Debug\net5.0\InventoryMangement.Infrastructure.EFCore.pdb
+D:\Store project\Store-project\_01_Store_Progect_Query\bin\Debug\net5.0\DiscountManagement.Application.contract.pdb
+D:\Store project\Store-project\_01_Store_Progect_Query\bin\Debug\net5.0\DiscountManagement.Domain.pdb
+D:\Store project\Store-project\_01_Store_Progect_Query\bin\Debug\net5.0\InventoryManagement.Application.Contract.pdb
+D:\Store project\Store-project\_01_Store_Progect_Query\bin\Debug\net5.0\InventoryManagement.Domain.pdb

@@ -1,4 +1,5 @@
-﻿using _01_Store_Project_Query.Contracts.ProductCategory;
+﻿using _01_Store_Project_Query.Contracts.Product;
+using _01_Store_Project_Query.Contracts.ProductCategory;
 using _01_Store_Project_Query.Contracts.Slide;
 using _01_Store_Project_Query.Query;
 using Microsoft.EntityFrameworkCore;
@@ -30,11 +31,23 @@ namespace ShopManagement.Configuration
             services.AddTransient<IProductPictureApplication, ProductPictureApplication>();
             services.AddTransient<IProductPictureRepository, ProductPictureRepository>();
 
-            services.AddTransient<ISlideApplication,SlideApplication>();
+            services.AddTransient<ISlideApplication, SlideApplication>();
             services.AddTransient<ISlideRepository, SlideRepository>();
 
-            services.AddTransient<ISlideQuery, SlideQuery >();
-           // services.AddTransient<IProductCategoryQuery, ProductCategoryQuery >();
+            //services.AddTransient<IOrderRepository, OrderRepository>();
+            //services.AddTransient<IOrderApplication, OrderApplication>();
+
+            //services.AddSingleton<ICartService, CartService>();
+
+            //services.AddTransient<IShopInventoryAcl, ShopInventoryAcl>();
+            //services.AddTransient<IShopAccountAcl, ShopAccountAcl>();
+
+            services.AddTransient<ISlideQuery, SlideQuery>();
+            services.AddTransient<IProductCategoryQuery, ProductCategoryQuery>();
+            services.AddTransient<IProductQuery, ProductQuery>();
+            //services.AddTransient<ICartCalculatorService, CartCalculatorService>();
+
+            //services.AddTransient<IPermissionExposer, ShopPermissionExposer>();
             services.AddDbContext<ShopContext>(x => x.UseSqlServer(ConnectionString));
         }
     }
