@@ -45,7 +45,37 @@
       "ProjectGuid": "208be06d-555e-43bc-8fae-357245c6ce95",
       "DisplayName": "_01_Store_Project_Query",
       "ColorIndex": 7
+    },
+    "1bb6a49b-1ea7-4a1c-bc62-645a4f5ae646": {
+      "ProjectGuid": "1bb6a49b-1ea7-4a1c-bc62-645a4f5ae646",
+      "DisplayName": "CommentManagment.Application",
+      "ColorIndex": 8
+    },
+    "016560cd-9c45-422e-992d-ecc566f98c52": {
+      "ProjectGuid": "016560cd-9c45-422e-992d-ecc566f98c52",
+      "DisplayName": "CommentManegment.Domain",
+      "ColorIndex": 9
+    },
+    "413adf8c-837f-41b8-b749-c73f4178e79b": {
+      "ProjectGuid": "413adf8c-837f-41b8-b749-c73f4178e79b",
+      "DisplayName": "CommentManagement.Application.Contracts",
+      "ColorIndex": 10
+    },
+    "2e82b8e5-0dd7-4117-bf7a-c69e7349dc4a": {
+      "ProjectGuid": "2e82b8e5-0dd7-4117-bf7a-c69e7349dc4a",
+      "DisplayName": "CommentManagement.Infrastructure.Configuration",
+      "ColorIndex": 11
+    },
+    "312d8eb0-b0e5-4e75-9921-acfd78950494": {
+      "ProjectGuid": "312d8eb0-b0e5-4e75-9921-acfd78950494",
+      "DisplayName": "CommnetManagement.Infrastructure.EFCore",
+      "ColorIndex": 12
+    },
+    "595fec91-6867-4779-9867-d50ce1530457": {
+      "ProjectGuid": "595fec91-6867-4779-9867-d50ce1530457",
+      "DisplayName": "InventoryMangement.Infrastructure.EFCore",
+      "ColorIndex": 13
     }
   },
-  "NextColorIndex": 8
+  "NextColorIndex": 14
 }

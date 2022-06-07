@@ -239,3 +239,14 @@ D:\Store project\Store-project\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\C
 D:\Store project\Store-project\ServiceHost\obj\Debug\net5.0\Razor\Pages\Product.cshtml.g.cs
 D:\Store project\Store-project\ServiceHost\obj\Debug\net5.0\Razor\Pages\ProductCategory.cshtml.g.cs
 D:\Store project\Store-project\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\Footer\Default.cshtml.g.cs
+D:\Store project\Store-project\ServiceHost\bin\Debug\net5.0\CommentManagement.Application.Contracts.dll
+D:\Store project\Store-project\ServiceHost\bin\Debug\net5.0\CommentManagement.Infrastructure.Configuration.dll
+D:\Store project\Store-project\ServiceHost\bin\Debug\net5.0\CommentManagment.Application.dll
+D:\Store project\Store-project\ServiceHost\bin\Debug\net5.0\CommentManegment.Domain.dll
+D:\Store project\Store-project\ServiceHost\bin\Debug\net5.0\CommnetManagement.Infrastructure.EFCore.dll
+D:\Store project\Store-project\ServiceHost\bin\Debug\net5.0\CommentManagement.Infrastructure.Configuration.pdb
+D:\Store project\Store-project\ServiceHost\bin\Debug\net5.0\CommentManagement.Application.Contracts.pdb
+D:\Store project\Store-project\ServiceHost\bin\Debug\net5.0\CommentManagment.Application.pdb
+D:\Store project\Store-project\ServiceHost\bin\Debug\net5.0\CommentManegment.Domain.pdb
+D:\Store project\Store-project\ServiceHost\bin\Debug\net5.0\CommnetManagement.Infrastructure.EFCore.pdb
+D:\Store project\Store-project\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Comments\Index.cshtml.g.cs

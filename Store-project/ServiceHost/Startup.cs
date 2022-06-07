@@ -7,6 +7,7 @@ using ShopManagement.Configuration;
 using _0_Framework.Application;
 using DiscountManagement.Configuration;
 using InventoryManagement.Infrastructure.Configuration;
+using CommentManagement.Infrastructure.Configuration;
 
 namespace ServiceHost
 {
@@ -27,6 +28,7 @@ namespace ServiceHost
             ShopManagementBootstrapper.Configure(services, connectionString);
             DiscountManagementBootstrapper.Configure(services , connectionString);
             InventoryManagementBootstrapper.Configure(services,connectionString);
+            CommentManagementBootstrapper.Configure(services, connectionString);
             services.AddTransient<IFileUploader, FileUploader>();
 
             services.AddRazorPages();

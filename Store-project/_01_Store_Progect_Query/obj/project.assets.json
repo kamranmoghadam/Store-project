@@ -1588,6 +1588,48 @@
           "bin/placeholder/0_Framework.dll": {}
         }
       },
+      "CommentManagement.Application.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_Framework": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CommentManagement.Application.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommentManagement.Application.Contracts.dll": {}
+        }
+      },
+      "CommentManegment.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_Framework": "1.0.0",
+          "CommentManagement.Application.Contracts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CommentManegment.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommentManegment.Domain.dll": {}
+        }
+      },
+      "CommnetManagement.Infrastructure.EFCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "CommentManegment.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CommnetManagement.Infrastructure.EFCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommnetManagement.Infrastructure.EFCore.dll": {}
+        }
+      },
       "DiscountManagement.Application.contract/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -1694,6 +1736,7 @@
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "0_Framework": "1.0.0",
+          "CommentManegment.Domain": "1.0.0",
           "ShopManagement.Application.Contracts": "1.0.0"
         },
         "compile": {
@@ -6037,6 +6080,21 @@
       "path": "../0_Framework/0_Framework.csproj",
       "msbuildProject": "../0_Framework/0_Framework.csproj"
     },
+    "CommentManagement.Application.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../CommentManagment.Application/CommentManagement.Application.Contracts.csproj",
+      "msbuildProject": "../CommentManagment.Application/CommentManagement.Application.Contracts.csproj"
+    },
+    "CommentManegment.Domain/1.0.0": {
+      "type": "project",
+      "path": "../CommentManegment.Domain/CommentManegment.Domain.csproj",
+      "msbuildProject": "../CommentManegment.Domain/CommentManegment.Domain.csproj"
+    },
+    "CommnetManagement.Infrastructure.EFCore/1.0.0": {
+      "type": "project",
+      "path": "../CommnetManagement.Infrastructure.EFCore/CommnetManagement.Infrastructure.EFCore.csproj",
+      "msbuildProject": "../CommnetManagement.Infrastructure.EFCore/CommnetManagement.Infrastructure.EFCore.csproj"
+    },
     "DiscountManagement.Application.contract/1.0.0": {
       "type": "project",
       "path": "../CustomerDiscount.Application.contract/DiscountManagement.Application.contract.csproj",
@@ -6085,6 +6143,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "CommnetManagement.Infrastructure.EFCore >= 1.0.0",
       "DiscountManagement.Infrastructure.EFCore >= 1.0.0",
       "InventoryMangement.Infrastructure.EFCore >= 1.0.0",
       "ShopManagement.Infrastructure.EFCore >= 1.0.0"
@@ -6125,6 +6184,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "D:\\Store project\\Store-project\\CommnetManagement.Infrastructure.EFCore\\CommnetManagement.Infrastructure.EFCore.csproj": {
+              "projectPath": "D:\\Store project\\Store-project\\CommnetManagement.Infrastructure.EFCore\\CommnetManagement.Infrastructure.EFCore.csproj"
+            },
             "D:\\Store project\\Store-project\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
               "projectPath": "D:\\Store project\\Store-project\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj"
             },

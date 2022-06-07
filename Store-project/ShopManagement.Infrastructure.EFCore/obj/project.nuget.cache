@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+B+4NXjz7owIQ1BUP5fhht6+jejIVBR5+n6UihKHT/WseptvgEJE+xakXkj4v1G/aaDjFy8COqjAtFptU0FRXA==",
+  "dgSpecHash": "qTPc4jPISAquT0Ny+2Rw6F4ziGCMRXoeibI+huPsZ0mrIddYaWO7LotgLA4ggStmcBwSVp+aHu50zJ2fTmVD9g==",
   "success": true,
   "projectFilePath": "D:\\Store project\\Store-project\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj",
   "expectedPackageFiles": [

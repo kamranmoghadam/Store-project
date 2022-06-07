@@ -15,3 +15,7 @@ D:\Store project\Store-project\ShopManagement.Domain\bin\Debug\net5.0\ShopManage
 D:\Store project\Store-project\ShopManagement.Domain\bin\Debug\net5.0\0_Framework.pdb
 D:\Store project\Store-project\ShopManagement.Domain\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb
 D:\Store project\Store-project\ShopManagement.Domain\obj\Debug\net5.0\ShopManagement.Domain.csproj.CopyComplete
+D:\Store project\Store-project\ShopManagement.Domain\bin\Debug\net5.0\CommentManagement.Application.Contracts.dll
+D:\Store project\Store-project\ShopManagement.Domain\bin\Debug\net5.0\CommentManegment.Domain.dll
+D:\Store project\Store-project\ShopManagement.Domain\bin\Debug\net5.0\CommentManegment.Domain.pdb
+D:\Store project\Store-project\ShopManagement.Domain\bin\Debug\net5.0\CommentManagement.Application.Contracts.pdb

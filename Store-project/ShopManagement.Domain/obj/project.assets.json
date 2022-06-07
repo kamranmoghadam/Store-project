@@ -267,6 +267,33 @@
           "bin/placeholder/0_Framework.dll": {}
         }
       },
+      "CommentManagement.Application.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_Framework": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CommentManagement.Application.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommentManagement.Application.Contracts.dll": {}
+        }
+      },
+      "CommentManegment.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "0_Framework": "1.0.0",
+          "CommentManagement.Application.Contracts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CommentManegment.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommentManegment.Domain.dll": {}
+        }
+      },
       "ShopManagement.Application.Contracts/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -789,6 +816,16 @@
       "path": "../0_Framework/0_Framework.csproj",
       "msbuildProject": "../0_Framework/0_Framework.csproj"
     },
+    "CommentManagement.Application.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../CommentManagment.Application/CommentManagement.Application.Contracts.csproj",
+      "msbuildProject": "../CommentManagment.Application/CommentManagement.Application.Contracts.csproj"
+    },
+    "CommentManegment.Domain/1.0.0": {
+      "type": "project",
+      "path": "../CommentManegment.Domain/CommentManegment.Domain.csproj",
+      "msbuildProject": "../CommentManegment.Domain/CommentManegment.Domain.csproj"
+    },
     "ShopManagement.Application.Contracts/1.0.0": {
       "type": "project",
       "path": "../ShopManagement.Application.Contracts/ShopManagement.Application.Contracts.csproj",
@@ -798,6 +835,7 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "0_Framework >= 1.0.0",
+      "CommentManegment.Domain >= 1.0.0",
       "ShopManagement.Application.Contracts >= 1.0.0"
     ]
   },
@@ -838,6 +876,9 @@
           "projectReferences": {
             "D:\\Store project\\Store-project\\0_Framework\\0_Framework.csproj": {
               "projectPath": "D:\\Store project\\Store-project\\0_Framework\\0_Framework.csproj"
+            },
+            "D:\\Store project\\Store-project\\CommentManegment.Domain\\CommentManegment.Domain.csproj": {
+              "projectPath": "D:\\Store project\\Store-project\\CommentManegment.Domain\\CommentManegment.Domain.csproj"
             },
             "D:\\Store project\\Store-project\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
               "projectPath": "D:\\Store project\\Store-project\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"

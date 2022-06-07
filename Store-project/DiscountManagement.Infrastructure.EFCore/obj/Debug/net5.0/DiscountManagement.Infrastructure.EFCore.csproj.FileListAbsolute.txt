@@ -26,3 +26,7 @@ D:\Store project\Store-project\DiscountManagement.Infrastructure.EFCore\bin\Debu
 D:\Store project\Store-project\DiscountManagement.Infrastructure.EFCore\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb
 D:\Store project\Store-project\DiscountManagement.Infrastructure.EFCore\bin\Debug\net5.0\ShopManagement.Domain.pdb
 D:\Store project\Store-project\DiscountManagement.Infrastructure.EFCore\obj\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.csproj.CopyComplete
+D:\Store project\Store-project\DiscountManagement.Infrastructure.EFCore\bin\Debug\net5.0\CommentManagement.Application.Contracts.dll
+D:\Store project\Store-project\DiscountManagement.Infrastructure.EFCore\bin\Debug\net5.0\CommentManegment.Domain.dll
+D:\Store project\Store-project\DiscountManagement.Infrastructure.EFCore\bin\Debug\net5.0\CommentManagement.Application.Contracts.pdb
+D:\Store project\Store-project\DiscountManagement.Infrastructure.EFCore\bin\Debug\net5.0\CommentManegment.Domain.pdb

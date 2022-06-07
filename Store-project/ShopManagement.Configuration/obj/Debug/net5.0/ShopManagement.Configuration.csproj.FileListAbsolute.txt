@@ -45,3 +45,9 @@ D:\Store project\Store-project\ShopManagement.Configuration\bin\Debug\net5.0\Dis
 D:\Store project\Store-project\ShopManagement.Configuration\bin\Debug\net5.0\InventoryManagement.Application.Contract.pdb
 D:\Store project\Store-project\ShopManagement.Configuration\bin\Debug\net5.0\InventoryManagement.Domain.pdb
 D:\Store project\Store-project\ShopManagement.Configuration\bin\Debug\net5.0\InventoryMangement.Infrastructure.EFCore.pdb
+D:\Store project\Store-project\ShopManagement.Configuration\bin\Debug\net5.0\CommentManagement.Application.Contracts.dll
+D:\Store project\Store-project\ShopManagement.Configuration\bin\Debug\net5.0\CommentManegment.Domain.dll
+D:\Store project\Store-project\ShopManagement.Configuration\bin\Debug\net5.0\CommnetManagement.Infrastructure.EFCore.dll
+D:\Store project\Store-project\ShopManagement.Configuration\bin\Debug\net5.0\CommentManagement.Application.Contracts.pdb
+D:\Store project\Store-project\ShopManagement.Configuration\bin\Debug\net5.0\CommentManegment.Domain.pdb
+D:\Store project\Store-project\ShopManagement.Configuration\bin\Debug\net5.0\CommnetManagement.Infrastructure.EFCore.pdb
