@@ -5,6 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Role\**" />
+    <EmbeddedResource Remove="Role\**" />
+    <None Remove="Role\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\0_Framework\0_Framework.csproj" />
   </ItemGroup>
 

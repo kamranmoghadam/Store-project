@@ -1,6 +1,7 @@
 ﻿using _0_Framework.Application;
 using AccountManagement.Application.Contracts.Account;
 using AccountManagement.Domain.AccountAgg;
+using AccountManagement.Domain.RoleAgg;
 using AccountMangement.Infrastructure.EFCore.Repository;
 using System.Collections.Generic;
 
@@ -12,13 +13,13 @@ namespace AccountManagement.Application
         private readonly IPasswordHasher _passwordHasher;
         private readonly IAccountRepository _accountRepository;
         //private readonly IAuthHelper _authHelper;
-        //private readonly RoleRepository _roleRepository;
+        private readonly IRoleRepository _roleRepository;
 
         public AccountApplication(IAccountRepository accountRepository, IPasswordHasher passwordHasher,
-            IFileUploader fileUploader/*, IAuthHelper authHelper, IRoleRepository roleRepository*/)
+            IFileUploader fileUploader/*, IAuthHelper authHelper*/, IRoleRepository roleRepository)
         {
             //_authHelper = authHelper;
-            //_roleRepository = roleRepository;
+            _roleRepository = roleRepository;
             _fileUploader = fileUploader;
             _passwordHasher = passwordHasher;
             _accountRepository = accountRepository;

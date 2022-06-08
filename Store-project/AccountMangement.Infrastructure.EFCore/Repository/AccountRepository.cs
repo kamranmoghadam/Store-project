@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using AccountManagement.Domain.RoleAgg;
 
 namespace AccountMangement.Infrastructure.EFCore.Repository
 {
@@ -32,7 +33,7 @@ namespace AccountMangement.Infrastructure.EFCore.Repository
                 Family = x.Family,
                 Email = x.Email,
                 Mobile = x.Mobile,
-                RoleId = 2/*x.RoleId*/,
+                RoleId = x.RoleId,
                 Username = x.Username
             }).FirstOrDefault(x => x.Id == id);
         }
@@ -50,15 +51,16 @@ namespace AccountMangement.Infrastructure.EFCore.Repository
 
         public List<AccountViewModel> Search(AccountSearchModel searchModel)
         {
-            var query = _context.Accounts/*.Include(x => x.Role)*/.Select(x => new AccountViewModel
+            var query = _context.Accounts.Include(x => x.Role).Select(x => new AccountViewModel
             {
                 Id = x.Id,
                 Name = x.Name,
                 Family = x.Family,
+                Email= x.Email,
                 Mobile = x.Mobile,
                 ProfilePhoto = x.ProfilePhoto,
-                Role = "مدیر سیستم",
-                RoleId = 2  /*x.RoleId*/,
+                Role = x.Role.Name,
+                RoleId = x.RoleId,
                 Username = x.Username,
                 CreationDate = x.CreationDate.ToFarsi()
             });

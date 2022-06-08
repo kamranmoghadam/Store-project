@@ -280,3 +280,6 @@ D:\Store project\Store-project\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administ
 D:\Store project\Store-project\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Accounts\Account\Create.cshtml.g.cs
 D:\Store project\Store-project\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Accounts\Account\Edit.cshtml.g.cs
 D:\Store project\Store-project\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Accounts\Account\Index.cshtml.g.cs
+D:\Store project\Store-project\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Accounts\Role\Create.cshtml.g.cs
+D:\Store project\Store-project\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Accounts\Role\Edit.cshtml.g.cs
+D:\Store project\Store-project\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Accounts\Role\Index.cshtml.g.cs

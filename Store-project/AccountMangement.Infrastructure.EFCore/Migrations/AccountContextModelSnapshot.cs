@@ -59,9 +59,6 @@ namespace AccountMangement.Infrastructure.EFCore.Migrations
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
-                    b.Property<string>("Role")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<long>("RoleId")
                         .HasColumnType("bigint");
 
@@ -72,7 +69,79 @@ namespace AccountMangement.Infrastructure.EFCore.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("RoleId");
+
                     b.ToTable("Accounts");
+                });
+
+            modelBuilder.Entity("AccountManagement.Domain.RoleAgg.Permission", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint")
+                        .UseIdentityColumn();
+
+                    b.Property<int>("Code")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<long>("RoleId")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("Permission");
+                });
+
+            modelBuilder.Entity("AccountManagement.Domain.RoleAgg.Role", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint")
+                        .UseIdentityColumn();
+
+                    b.Property<DateTime>("CreationDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Roles");
+                });
+
+            modelBuilder.Entity("AccountManagement.Domain.AccountAgg.Account", b =>
+                {
+                    b.HasOne("AccountManagement.Domain.RoleAgg.Role", "Role")
+                        .WithMany("Accounts")
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Role");
+                });
+
+            modelBuilder.Entity("AccountManagement.Domain.RoleAgg.Permission", b =>
+                {
+                    b.HasOne("AccountManagement.Domain.RoleAgg.Role", "Role")
+                        .WithMany("Permissions")
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Role");
+                });
+
+            modelBuilder.Entity("AccountManagement.Domain.RoleAgg.Role", b =>
+                {
+                    b.Navigation("Accounts");
+
+                    b.Navigation("Permissions");
                 });
 #pragma warning restore 612, 618
         }

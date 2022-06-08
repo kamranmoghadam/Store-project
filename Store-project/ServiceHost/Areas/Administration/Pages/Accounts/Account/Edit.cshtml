@@ -43,7 +43,7 @@
                     <span asp-validation-for="Username" class="error"></span>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-12">
                 <div class="form-group">
                     <label asp-for="Mobile" class="control-label">موبایل</label>
                     <input type="text" class="form-control" asp-for="Mobile">
@@ -55,10 +55,10 @@
             <div class="col-md-12">
                 <div class="form-group">
                     <label asp-for="RoleId" class="control-label">نقش</label>
-                   @* <select class="form-control" asp-for="RoleId"
+                    <select class="form-control" asp-for="RoleId"
                             asp-items='new SelectList(Model.Roles, "Id", "Name")'>
                         <option value="0">گروه محصول</option>
-                    </select>*@
+                    </select>
                     <span asp-validation-for="RoleId" class="error"></span>
                 </div>
             </div>
@@ -73,6 +73,7 @@
             </div>
         </div>
     </div>
+    <input type="hidden" asp-for="Id" value="@Model.Id" />
     <div class="modal-footer">
         <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">بستن</button>
         <button type="submit" class="btn btn-info waves-effect waves-light">ویرایش</button>
