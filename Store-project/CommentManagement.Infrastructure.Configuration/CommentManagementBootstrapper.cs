@@ -1,4 +1,6 @@
-﻿using CommentManagement.Application.Contracts.Comment;
+﻿using _0_Framework.Infrastructure;
+using CommentManagement.Application.Contracts.Comment;
+using CommentManagement.Infrastructure.Configuration.Permissions;
 using CommentManagment.Application;
 using CommentManegment.Domain.CommentAgg;
 using CommnetManagement.Infrastructure.EFCore;
@@ -14,6 +16,7 @@ namespace CommentManagement.Infrastructure.Configuration
         {
             services.AddTransient<ICommentRepository, CommentRepository>();
             services.AddTransient<ICommentApplication, CommentApplication>();
+            services.AddTransient<IPermissionExposer, CommentPermissionExposer>();
 
             services.AddDbContext<CommentContext>(x => x.UseSqlServer(connectionString));
         }

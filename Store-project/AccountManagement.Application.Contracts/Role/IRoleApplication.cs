@@ -9,5 +9,6 @@ namespace AccountManagement.Application.Contracts.Role
         OperationResult Edit(EditRole command);
         List<RoleViewModel> List();
         EditRole GetDetails(long id);
+        
     }
 }

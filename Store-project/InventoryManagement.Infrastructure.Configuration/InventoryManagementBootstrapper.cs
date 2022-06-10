@@ -1,6 +1,10 @@
-﻿using InventoryManagement.Application;
+﻿using _0_Framework.Infrastructure;
+using _01_Store_Project_Query.Contracts.Inventory;
+using _01_Store_Project_Query.Query;
+using InventoryManagement.Application;
 using InventoryManagement.Application.Contract.Inventory;
 using InventoryManagement.Domain.InventoryAgg;
+using InventoryManagement.Infrastructure.Configuration.Permissions;
 using InventoryMangement.Infrastructure.EFCore;
 using InventoryMangement.Infrastructure.EFCore.Repository;
 using Microsoft.EntityFrameworkCore;
@@ -15,9 +19,9 @@ namespace InventoryManagement.Infrastructure.Configuration
             services.AddTransient<IInventoryRepository, InventoryRepository>();
             services.AddTransient<IInventoryApplication, InventoryApplication>();
 
-            //services.AddTransient<IPermissionExposer, InventoryPermissionExposer>();
+            services.AddTransient<IPermissionExposer, InventoryPermissionExposer>();
 
-            //services.AddTransient<IInventoryQuery, InventoryQuery>();
+            services.AddTransient<IInventoryQuery, InventoryQuery>();
 
             services.AddDbContext<InventoryContext>(x => x.UseSqlServer(connectionString));
         }

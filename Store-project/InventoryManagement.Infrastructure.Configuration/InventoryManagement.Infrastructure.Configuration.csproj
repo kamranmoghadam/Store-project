@@ -12,6 +12,7 @@
     <ProjectReference Include="..\InventoryManagement.Application\InventoryManagement.Application.csproj" />
     <ProjectReference Include="..\InventoryManagement.Domain\InventoryManagement.Domain.csproj" />
     <ProjectReference Include="..\InventoryMangement.Infrastructure.EFCore\InventoryMangement.Infrastructure.EFCore.csproj" />
+    <ProjectReference Include="..\_01_Store_Progect_Query\_01_Store_Project_Query.csproj" />
   </ItemGroup>
 
 </Project>

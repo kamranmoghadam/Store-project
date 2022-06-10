@@ -8,6 +8,6 @@ namespace _01_Store_Project_Query.Contracts.Product
         ProductQueryModel GetProductDetails(string slug);
         List<ProductQueryModel> GetLatestArrivals();
         List<ProductQueryModel> Search(string value);
-       // List<CartItem> CheckInventoryStatus(List<CartItem> cartItems);
+        //List<CartItem> CheckInventoryStatus(List<CartItem> cartItems);
     }
 }

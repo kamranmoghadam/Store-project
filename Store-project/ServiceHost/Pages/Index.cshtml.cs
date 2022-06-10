@@ -6,10 +6,10 @@ namespace ServiceHost.Pages
     {
         //private readonly IEmailService _emailService;
 
-        //public IndexModel(IEmailService emailService)
-        //{
-        //    _emailService = emailService;
-        //}
+        public IndexModel(/*IEmailService emailService*/)
+        {
+            //_emailService = emailService;
+        }
 
         public void OnGet()
         {

@@ -100,7 +100,32 @@
       "ProjectGuid": "40fe978b-41ec-4749-93b5-3096f1dac5f7",
       "DisplayName": "BlogManagement.Infrastructure.EFCore",
       "ColorIndex": 2
+    },
+    "bebbc723-5caf-4b12-90b3-b520a46e05bf": {
+      "ProjectGuid": "bebbc723-5caf-4b12-90b3-b520a46e05bf",
+      "DisplayName": "AccountManagement.Domain",
+      "ColorIndex": 3
+    },
+    "eba78b0d-1c97-426f-8838-4fdd33a2b576": {
+      "ProjectGuid": "eba78b0d-1c97-426f-8838-4fdd33a2b576",
+      "DisplayName": "AccountManagement.Application.Contracts",
+      "ColorIndex": 4
+    },
+    "05220f90-db61-4314-8094-230f3373f672": {
+      "ProjectGuid": "05220f90-db61-4314-8094-230f3373f672",
+      "DisplayName": "AccountManagement.Application",
+      "ColorIndex": 5
+    },
+    "36ed659c-3266-498f-b7a5-162fc16b0963": {
+      "ProjectGuid": "36ed659c-3266-498f-b7a5-162fc16b0963",
+      "DisplayName": "AccountManagement.Configuration",
+      "ColorIndex": 6
+    },
+    "057d0c2f-d944-49df-a6d0-b71f8334a19f": {
+      "ProjectGuid": "057d0c2f-d944-49df-a6d0-b71f8334a19f",
+      "DisplayName": "AccountMangement.Infrastructure.EFCore",
+      "ColorIndex": 7
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 8
 }

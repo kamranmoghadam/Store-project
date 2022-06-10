@@ -29,6 +29,7 @@
     </div>
 </div>
 
+
 <div class="page-content-area">
     <div class="container">
         <div class="row">
@@ -61,14 +62,14 @@
                                                 ]'>
 
                                                 <div class="single-image">
-                                                    <img src="~/ProductPictures/@Model.Product.Picture" class="img-fluid"
+                                                    <img src="~/Pictures/@Model.Product.Picture" class="img-fluid"
                                                          alt="@Model.Product.Picture">
                                                 </div>
                                                 @foreach (var picture in Model.Product.Pictures)
                                                 {
                                                     <div class="single-image">
-                                                        <img src="~/ProductPictures/@picture.Picture" class="img-fluid"
-                                                         alt="@picture.PictureAlt" title="@picture.PictureTitle">
+                                                        <img src="~/Pictures/@picture.Picture" class="img-fluid"
+                                                             alt="@picture.PictureAlt" title="@picture.PictureTitle">
                                                     </div>
                                                 }
                                             </div>
@@ -97,14 +98,14 @@
                                                     {"breakpoint":479, "settings": {"slidesToShow": 2, "arrows": false, "slidesToScroll": 1} }
                                                 ]'>
                                             <div class="single-image">
-                                                <img src="~/ProductPictures/@Model.Product.Picture" class="img-fluid"
+                                                <img src="~/Pictures/@Model.Product.Picture" class="img-fluid"
                                                      alt="@Model.Product.Picture">
                                             </div>
                                             @foreach (var picture in Model.Product.Pictures)
                                             {
                                                 <div class="single-image">
-                                                    <img src="~/ProductPictures/@picture.Picture" class="img-fluid"
-                                                     alt="@picture.PictureAlt" title="@picture.PictureTitle">
+                                                    <img src="~/Pictures/@picture.Picture" class="img-fluid"
+                                                         alt="@picture.PictureAlt" title="@picture.PictureTitle">
                                                 </div>
                                             }
                                         </div>
@@ -113,7 +114,7 @@
                                 <div class="col-lg-6">
                                     <div class="single-product-content-description">
                                         <p class="single-info">
-                                            <a asp-page="/ProductCategory" asp-route-id="@Model.Product.CategorySlug">@Model.Product.Category</a>
+                                            <a asp-page="/Category" asp-route-id="@Model.Product.CategorySlug">@Model.Product.Category</a>
                                         </p>
                                         <h2 class="product-title">@Model.Product.Name</h2>
                                         <div class="product-rating">
@@ -218,7 +219,7 @@
                                                    data-toggle="tab" href="#product-description" role="tab"
                                                    aria-selected="true">توضیحات</a>
                                                 <a class="nav-item nav-link" id="review-tab" data-toggle="tab"
-                                                   href="#review" role="tab" aria-selected="false">نظرات (@*@Model.Product.Comments.Count*@)</a>
+                                                   href="#review" role="tab" aria-selected="false">نظرات (@Model.Product.Comments.Count)</a>
                                             </div>
                                         </nav>
                                         <div class="tab-content" id="nav-tabContent">
@@ -232,49 +233,66 @@
                                                  aria-labelledby="review-tab">
                                                 <div class="product-rating-wrap">
                                                     @*<div class="rating-list">
-                                                        <div class="sin-list float-right">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <span>(5)</span>
-                                                        </div>
-                                                        <div class="sin-list float-right">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                        <span>(3)</span>
-                                                        </div>
-                                                        <div class="sin-list float-right">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                        <span>(1)</span>
-                                                        </div>
-                                                        <div class="sin-list float-right">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                        <span>(0)</span>
-                                                        </div>
-                                                        <div class="sin-list float-right">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                        <span>(0)</span>
-                                                        </div>
+                                                            <div class="sin-list float-right">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <span>(5)</span>
+                                                            </div>
+                                                            <div class="sin-list float-right">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star-o"></i>
+                                                                <span>(3)</span>
+                                                            </div>
+                                                            <div class="sin-list float-right">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star-o"></i>
+                                                                <i class="fa fa-star-o"></i>
+                                                                <span>(1)</span>
+                                                            </div>
+                                                            <div class="sin-list float-right">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star-o"></i>
+                                                                <i class="fa fa-star-o"></i>
+                                                                <i class="fa fa-star-o"></i>
+                                                                <span>(0)</span>
+                                                            </div>
+                                                            <div class="sin-list float-right">
+                                                                <i class="fa fa-star"></i>
+                                                                <i class="fa fa-star-o"></i>
+                                                                <i class="fa fa-star-o"></i>
+                                                                <i class="fa fa-star-o"></i>
+                                                                <i class="fa fa-star-o"></i>
+                                                                <span>(0)</span>
+                                                            </div>
                                                         </div>*@
-                                                    <!---فقظ قسمت فور ایچ حذف شده مجددا باید گذاشته شود  ---@@@@@@@@@@@@--------------------------->
-                                                   
+                                                    @foreach (var comment in Model.Product.Comments)
+                                                    {
+                                                        <div class="ratings-wrapper">
+                                                            <div class="sin-ratings">
+                                                                <div class="rating-author">
+                                                                    <h3>@comment.Name</h3>
+                                                                    @*<div class="rating-star">
+                                                                            <i class="fa fa-star"></i>
+                                                                            <i class="fa fa-star"></i>
+                                                                            <i class="fa fa-star"></i>
+                                                                            <i class="fa fa-star"></i>
+                                                                            <i class="fa fa-star"></i>
+                                                                            <span>(5)</span>
+                                                                        </div>*@
+                                                                </div>
+                                                                <p>@comment.Message</p>
+                                                            </div>
+                                                        </div>
+                                                    }
 
                                                     <div class="rating-form-wrapper fix">
                                                         <h3>نظر خود را به ما بگویید</h3>
@@ -314,3 +332,4 @@
         </div>
     </div>
 </div>
+

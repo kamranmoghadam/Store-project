@@ -1,5 +1,5 @@
 ﻿@model _01_Store_Project_Query.MenuModel
-@*@inject _0_Framework.Application.IAuthHelper AuthHelper*@
+@inject _0_Framework.Application.IAuthHelper AuthHelper
 
 <div class="header-area header-sticky">
     <div class="container">
@@ -31,18 +31,18 @@
                                 <li class="menu-item-has-children">
                                     <a>مقالات</a>
                                     <ul class="sub-menu">
-                                       @* @foreach (var category in Model.ArticleCategories)
+                                        @foreach (var category in Model.ArticleCategories)
                                         {
                                             <li>
                                                 <a asp-page="./ArticleCategory" asp-route-id="@category.Slug">@category.Name</a>
                                             </li>
-                                        }*@
+                                        }
                                     </ul>
                                 </li>
                                 <li>
                                     <a href="contact.html">تماس با ما</a>
                                 </li>
-                                @*@if (AuthHelper.IsAuthenticated())
+                                @if (AuthHelper.IsAuthenticated())
                                 {
                                     <li>
                                         <a asp-page="/Account" asp-page-handler="Logout">خروج</a>
@@ -53,7 +53,7 @@
                                     <li>
                                         <a asp-page="/Account">وورد / ثبت نام</a>
                                     </li>
-                                }*@
+                                }
                             </ul>
                         </nav>
                     </div>
@@ -72,7 +72,6 @@
                                     </a>
                                     <div class="mini-cart" id="mini-cart">
                                         <div class="cart-items-wrapper ps-scroll" id="cart_items_wrapper">
-                                            
                                         </div>
                                         <div class="cart-buttons">
                                             <a asp-page="/Cart">مشاهده سبد خرید</a>
@@ -104,30 +103,30 @@
                                             </ul>
                                         </div>
                                         @*<div class="single-settings-block">
-                                                <h4 class="title">CURRENCY: USD </h4>
-                                                <ul>
-                                                    <li>
-                                                        <a href="javascript:void(0)">€ Euro</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="javascript:void(0)">$ US Dollar</a>
-                                                    </li>
-                                                </ul>
+                                            <h4 class="title">CURRENCY: USD </h4>
+                                            <ul>
+                                            <li>
+                                            <a href="javascript:void(0)">€ Euro</a>
+                                            </li>
+                                            <li>
+                                            <a href="javascript:void(0)">$ US Dollar</a>
+                                            </li>
+                                            </ul>
                                             </div>
                                             <div class="single-settings-block">
-                                                <h4 class="title">LANGUAGE: EN-GB </h4>
-                                                <ul>
-                                                    <li>
-                                                        <a href="javascript:void(0)">
-                                                            <img src="~/Theme/assets/img/icons/en-gb.png" alt=""> English
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="javascript:void(0)">
-                                                            <img src="~/Theme/assets/img/icons/de-de.png" alt=""> Germany
-                                                        </a>
-                                                    </li>
-                                                </ul>
+                                            <h4 class="title">LANGUAGE: EN-GB </h4>
+                                            <ul>
+                                            <li>
+                                            <a href="javascript:void(0)">
+                                            <img src="~/Theme/assets/img/icons/en-gb.png" alt=""> English
+                                            </a>
+                                            </li>
+                                            <li>
+                                            <a href="javascript:void(0)">
+                                            <img src="~/Theme/assets/img/icons/de-de.png" alt=""> Germany
+                                            </a>
+                                            </li>
+                                            </ul>
                                             </div>*@
                                     </div>
                                 </div>

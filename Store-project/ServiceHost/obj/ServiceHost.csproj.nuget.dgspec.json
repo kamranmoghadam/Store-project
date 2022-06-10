@@ -46,6 +46,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.Cookies": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.AspNetCore.Http.Features": {
               "target": "Package",
               "version": "[5.0.17, )"
@@ -57,6 +61,10 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
             }
           },
           "imports": [
@@ -689,6 +697,9 @@
               },
               "D:\\Store project\\Store-project\\BlogManagement.Infrastructure.EFCore\\BlogManagement.Infrastructure.EFCore.csproj": {
                 "projectPath": "D:\\Store project\\Store-project\\BlogManagement.Infrastructure.EFCore\\BlogManagement.Infrastructure.EFCore.csproj"
+              },
+              "D:\\Store project\\Store-project\\_01_Store_Progect_Query\\_01_Store_Project_Query.csproj": {
+                "projectPath": "D:\\Store project\\Store-project\\_01_Store_Progect_Query\\_01_Store_Project_Query.csproj"
               }
             }
           }
@@ -1797,6 +1808,9 @@
               },
               "D:\\Store project\\Store-project\\InventoryMangement.Infrastructure.EFCore\\InventoryMangement.Infrastructure.EFCore.csproj": {
                 "projectPath": "D:\\Store project\\Store-project\\InventoryMangement.Infrastructure.EFCore\\InventoryMangement.Infrastructure.EFCore.csproj"
+              },
+              "D:\\Store project\\Store-project\\_01_Store_Progect_Query\\_01_Store_Project_Query.csproj": {
+                "projectPath": "D:\\Store project\\Store-project\\_01_Store_Progect_Query\\_01_Store_Project_Query.csproj"
               }
             }
           }
@@ -2429,6 +2443,9 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+              "D:\\Store project\\Store-project\\BlogManagement.Infrastructure.EFCore\\BlogManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "D:\\Store project\\Store-project\\BlogManagement.Infrastructure.EFCore\\BlogManagement.Infrastructure.EFCore.csproj"
+              },
               "D:\\Store project\\Store-project\\CommnetManagement.Infrastructure.EFCore\\CommnetManagement.Infrastructure.EFCore.csproj": {
                 "projectPath": "D:\\Store project\\Store-project\\CommnetManagement.Infrastructure.EFCore\\CommnetManagement.Infrastructure.EFCore.csproj"
               },

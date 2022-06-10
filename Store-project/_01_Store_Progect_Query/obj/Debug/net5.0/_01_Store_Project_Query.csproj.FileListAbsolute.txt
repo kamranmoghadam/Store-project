@@ -37,3 +37,9 @@ D:\Store project\Store-project\_01_Store_Progect_Query\bin\Debug\net5.0\CommnetM
 D:\Store project\Store-project\_01_Store_Progect_Query\bin\Debug\net5.0\CommnetManagement.Infrastructure.EFCore.pdb
 D:\Store project\Store-project\_01_Store_Progect_Query\bin\Debug\net5.0\CommentManagement.Application.Contracts.pdb
 D:\Store project\Store-project\_01_Store_Progect_Query\bin\Debug\net5.0\CommentManegment.Domain.pdb
+D:\Store project\Store-project\_01_Store_Progect_Query\bin\Debug\net5.0\BlogManagement.Application.Contracts.dll
+D:\Store project\Store-project\_01_Store_Progect_Query\bin\Debug\net5.0\BlogManagement.Domain.dll
+D:\Store project\Store-project\_01_Store_Progect_Query\bin\Debug\net5.0\BlogManagement.Infrastructure.EFCore.dll
+D:\Store project\Store-project\_01_Store_Progect_Query\bin\Debug\net5.0\BlogManagement.Infrastructure.EFCore.pdb
+D:\Store project\Store-project\_01_Store_Progect_Query\bin\Debug\net5.0\BlogManagement.Application.Contracts.pdb
+D:\Store project\Store-project\_01_Store_Progect_Query\bin\Debug\net5.0\BlogManagement.Domain.pdb

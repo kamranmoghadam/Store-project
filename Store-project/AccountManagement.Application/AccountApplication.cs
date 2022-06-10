@@ -2,8 +2,8 @@
 using AccountManagement.Application.Contracts.Account;
 using AccountManagement.Domain.AccountAgg;
 using AccountManagement.Domain.RoleAgg;
-using AccountMangement.Infrastructure.EFCore.Repository;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace AccountManagement.Application
 {
@@ -12,13 +12,13 @@ namespace AccountManagement.Application
         private readonly IFileUploader _fileUploader;
         private readonly IPasswordHasher _passwordHasher;
         private readonly IAccountRepository _accountRepository;
-        //private readonly IAuthHelper _authHelper;
+        private readonly IAuthHelper _authHelper;
         private readonly IRoleRepository _roleRepository;
 
         public AccountApplication(IAccountRepository accountRepository, IPasswordHasher passwordHasher,
-            IFileUploader fileUploader/*, IAuthHelper authHelper*/, IRoleRepository roleRepository)
+            IFileUploader fileUploader, IAuthHelper authHelper, IRoleRepository roleRepository)
         {
-            //_authHelper = authHelper;
+            _authHelper = authHelper;
             _roleRepository = roleRepository;
             _fileUploader = fileUploader;
             _passwordHasher = passwordHasher;
@@ -93,33 +93,33 @@ namespace AccountManagement.Application
             return _accountRepository.GetDetails(id);
         }
 
-        //public OperationResult Login(Login command)
-        //{
-        //    var operation = new OperationResult();
-        //    var account = _accountRepository.GetBy(command.Username);
-        //    if (account == null)
-        //        return operation.Failed(ApplicationMessages.WrongUserPass);
+        public OperationResult Login(Login command)
+        {
+            var operation = new OperationResult();
+            var account = _accountRepository.GetBy(command.Username);
+            if (account == null)
+                return operation.Failed(ApplicationMessages.WrongUserPass);
 
-        //    var result = _passwordHasher.Check(account.Password, command.Password);
-        //    if (!result.Verified)
-        //        return operation.Failed(ApplicationMessages.WrongUserPass);
+            var result = _passwordHasher.Check(account.Password, command.Password);
+            if (!result.Verified)
+                return operation.Failed(ApplicationMessages.WrongUserPass);
 
-        //    var permissions = _roleRepository.Get(account.RoleId)
-        //        .Permissions
-        //        .Select(x => x.Code)
-        //        .ToList();
+            var permissions = _roleRepository.Get(account.RoleId)
+                .Permissions
+                .Select(x => x.Code)
+                .ToList();
 
-        //    var authViewModel = new AuthViewModel(account.Id, account.RoleId, account.Fullname
-        //        , account.Username, account.Mobile, permissions);
+            var authViewModel = new AuthViewModel(account.Id, account.RoleId, account.Name,account.Family,account.Email
+                , account.Username, account.Mobile,account.ProfilePhoto, permissions);
 
-        //    _authHelper.Signin(authViewModel);
-        //    return operation.Succedded();
-        //}
+            _authHelper.Signin(authViewModel);
+            return operation.Succedded();
+        }
 
-        //public void Logout()
-        //{
-        //    _authHelper.SignOut();
-        //}
+        public void Logout()
+        {
+            _authHelper.SignOut();
+        }
 
         public List<AccountViewModel> GetAccounts()
         {

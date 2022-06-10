@@ -1,0 +1,12 @@
+D:\Store project\Store-project\ShopManagement.Presentation.Api\bin\Debug\net5.0\ShopManagement.Presentation.Api.deps.json
+D:\Store project\Store-project\ShopManagement.Presentation.Api\bin\Debug\net5.0\ShopManagement.Presentation.Api.dll
+D:\Store project\Store-project\ShopManagement.Presentation.Api\bin\Debug\net5.0\ref\ShopManagement.Presentation.Api.dll
+D:\Store project\Store-project\ShopManagement.Presentation.Api\bin\Debug\net5.0\ShopManagement.Presentation.Api.pdb
+D:\Store project\Store-project\ShopManagement.Presentation.Api\obj\Debug\net5.0\ShopManagement.Presentation.Api.GeneratedMSBuildEditorConfig.editorconfig
+D:\Store project\Store-project\ShopManagement.Presentation.Api\obj\Debug\net5.0\ShopManagement.Presentation.Api.AssemblyInfoInputs.cache
+D:\Store project\Store-project\ShopManagement.Presentation.Api\obj\Debug\net5.0\ShopManagement.Presentation.Api.AssemblyInfo.cs
+D:\Store project\Store-project\ShopManagement.Presentation.Api\obj\Debug\net5.0\ShopManagement.Presentation.Api.csproj.CoreCompileInputs.cache
+D:\Store project\Store-project\ShopManagement.Presentation.Api\obj\Debug\net5.0\ShopManagement.Presentation.Api.dll
+D:\Store project\Store-project\ShopManagement.Presentation.Api\obj\Debug\net5.0\ref\ShopManagement.Presentation.Api.dll
+D:\Store project\Store-project\ShopManagement.Presentation.Api\obj\Debug\net5.0\ShopManagement.Presentation.Api.pdb
+D:\Store project\Store-project\ShopManagement.Presentation.Api\obj\Debug\net5.0\ShopManagement.Presentation.Api.csproj.AssemblyReference.cache
