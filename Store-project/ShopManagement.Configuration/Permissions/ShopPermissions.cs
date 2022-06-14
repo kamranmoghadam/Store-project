@@ -32,5 +32,12 @@ namespace ShopManagement.Configuration.Permissions
         public const int EditSlide = 43;
         public const int RemoveSlide = 44;
         public const int RestoreSlide = 45;
+
+        //Order
+        public const int ListOrder = 46;
+        public const int SearchOrder = 47;
+        public const int ConfirmOrder = 48;
+        public const int RemoveOrder = 49;
+        
     }
 }

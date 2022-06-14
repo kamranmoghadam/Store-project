@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
-using _0_Framework.Infrastructure;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Http;
@@ -31,10 +30,10 @@ namespace _0_Framework.Application
             result.RoleId = long.Parse(claims.FirstOrDefault(x => x.Type == ClaimTypes.Role).Value);
             result.Name = claims.FirstOrDefault(x => x.Type == ClaimTypes.Name).Value;
             result.Family = claims.FirstOrDefault(x => x.Type == "Family").Value;
-            result.Email= claims.FirstOrDefault(x => x.Type==ClaimTypes.Email).Value;
+            result.Email= claims.FirstOrDefault(x => x.Type==ClaimTypes.Email)?.Value;
             result.Mobile = claims.FirstOrDefault(x => x.Type == ClaimTypes.MobilePhone).Value;
-            result.ProfilePhoto = claims.FirstOrDefault(x => x.Type == "ProfilePhoto").Value;
-            result.Role = Roles.GetRoleBy(result.RoleId);
+            result.ProfilePhoto = claims.FirstOrDefault(x => x.Type == "ProfilePhoto")?.Value;
+            result.Role = claims.FirstOrDefault(x => x.Type == "Role")?.Value;
             return result;
         }
 
@@ -91,8 +90,8 @@ namespace _0_Framework.Application
                 new Claim(ClaimTypes.Role, account.RoleId.ToString()),
                 new Claim("Username", account.Username), // Or Use ClaimTypes.NameIdentifier
                 new Claim("permissions", permissions),
-                new Claim(ClaimTypes.MobilePhone , account.Mobile),
-                new Claim("ProfilePhoto",account.ProfilePhoto)
+                new Claim("ProfilePhoto",account. ProfilePhoto),
+                new Claim(ClaimTypes.MobilePhone , account.Mobile)
             };
 
             var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);

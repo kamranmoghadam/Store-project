@@ -42,7 +42,7 @@ namespace ShopManagement.Application
             var pictureName = _fileUploader.Upload(command.Picture, "slides");
 
             slide.Edit(pictureName, command.PictureAlt, command.PictureTitle,
-                command.Heading, command.Title, command.Text, command.Link, command.BtnText);
+                command.Heading, command.Title, command.Text, command.BtnText, command.Link);
             _slideRepository.SaveChanges();
             return operation.Succedded();
         }

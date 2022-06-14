@@ -1,6 +1,53 @@
 ﻿@model _01_Store_Project_Query.MenuModel
 @inject _0_Framework.Application.IAuthHelper AuthHelper
-
+@{
+    var currentAccout = AuthHelper.CurrentAccountInfo();
+}
+@*<div class="topbar-site d-none d-lg-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="d-flex align-items-center ">
+                    <div class="email ">
+                        <a href="Info@DigiMsp.com">
+                            <span>contact@servin.com</span>
+                            <i class="far fa-envelope"></i>
+                        </a>
+                    </div>
+                    <div class="phone">
+                        <a href="tel:09151900094">
+                            <span>09151900094</span>
+                            <i class="fal fa-phone-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="d-flex align-items-center justify-content-end">
+                    <div class="user-account d-none d-md-block">
+                        <a href="account.html">
+                            @if (AuthHelper.IsAuthenticated())
+                            {
+                                <span>@currentAccout.Name @currentAccout.Family</span>
+                            }
+                            else
+                            {
+                                <span>حساب کاربری</span>
+                            }
+                            <i class="fal fa-user"></i>
+                        </a>
+                    </div>
+                    <ul class="serv-socialicon d-flex align-items-center">
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>*@
 <div class="header-area header-sticky">
     <div class="container">
         <div class="row">
@@ -8,8 +55,12 @@
                 <div class="header-wrapper d-none d-lg-flex">
                     <div class="logo">
                         <a asp-page="/Index">
-                            <img src="~/Theme/assets/img/logo.png" class="img-fluid" alt="">
+                            <img src="~/Pictures/اخبار-شرکت/2022-06-08-12-39-21-Logo.jpg" class="img-fluid" alt="">
                         </a>
+                        @if (AuthHelper.IsAuthenticated())
+                            {
+                                <label>@currentAccout.Name @currentAccout.Family </label>
+                            }
                     </div>
                     <div class="navigation-menu-wrapper">
                         <nav>
@@ -45,6 +96,7 @@
                                 @if (AuthHelper.IsAuthenticated())
                                 {
                                     <li>
+
                                         <a asp-page="/Account" asp-page-handler="Logout">خروج</a>
                                     </li>
                                 }

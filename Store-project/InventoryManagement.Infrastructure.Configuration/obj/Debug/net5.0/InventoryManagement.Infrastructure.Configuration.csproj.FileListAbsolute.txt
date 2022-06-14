@@ -47,3 +47,9 @@ D:\Store project\Store-project\InventoryManagement.Infrastructure.Configuration\
 D:\Store project\Store-project\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\DiscountManagement.Application.contract.pdb
 D:\Store project\Store-project\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\DiscountManagement.Domain.pdb
 D:\Store project\Store-project\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\DiscountManagement.Infrastructure.EFCore.pdb
+D:\Store project\Store-project\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\AccountManagement.Application.Contracts.dll
+D:\Store project\Store-project\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\AccountManagement.Domain.dll
+D:\Store project\Store-project\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\AccountMangement.Infrastructure.EFCore.dll
+D:\Store project\Store-project\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\AccountManagement.Application.Contracts.pdb
+D:\Store project\Store-project\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\AccountManagement.Domain.pdb
+D:\Store project\Store-project\InventoryManagement.Infrastructure.Configuration\bin\Debug\net5.0\AccountMangement.Infrastructure.EFCore.pdb

@@ -1,7 +1,6 @@
 ﻿using _0_Framework.Application;
 using DiscountManagement.Application.Contract.ColleagueDiscount;
 using DiscountManagement.Domain.ColleagueDiscountAgg;
-using System;
 using System.Collections.Generic;
 
 namespace DiscountManagement.Application

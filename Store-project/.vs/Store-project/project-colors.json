@@ -125,7 +125,67 @@
       "ProjectGuid": "057d0c2f-d944-49df-a6d0-b71f8334a19f",
       "DisplayName": "AccountMangement.Infrastructure.EFCore",
       "ColorIndex": 7
+    },
+    "7e48618e-a09c-4884-99e0-9d73f6d16dc2": {
+      "ProjectGuid": "7e48618e-a09c-4884-99e0-9d73f6d16dc2",
+      "DisplayName": "ShopManagement.Presentation.Api",
+      "ColorIndex": 8
+    },
+    "a611c682-a692-4cff-ac5b-78ee1d867f20": {
+      "ProjectGuid": "a611c682-a692-4cff-ac5b-78ee1d867f20",
+      "DisplayName": "InventoryManagement.Infrastructure.Configuration",
+      "ColorIndex": 9
+    },
+    "049d15fb-ff78-4694-8dee-07fb7caeb550": {
+      "ProjectGuid": "049d15fb-ff78-4694-8dee-07fb7caeb550",
+      "DisplayName": "DiscountManagement.Configuration",
+      "ColorIndex": 10
+    },
+    "1f72820e-d4ce-45cc-b698-117519a115f1": {
+      "ProjectGuid": "1f72820e-d4ce-45cc-b698-117519a115f1",
+      "DisplayName": "DiscountManagement.Application",
+      "ColorIndex": 11
+    },
+    "34eb389b-5d1f-4352-bb3d-afb75c1cc279": {
+      "ProjectGuid": "34eb389b-5d1f-4352-bb3d-afb75c1cc279",
+      "DisplayName": "DiscountManagement.Infrastructure.EFCore",
+      "ColorIndex": 12
+    },
+    "4b1ecdfb-4d34-4d23-99be-87dd2982d94f": {
+      "ProjectGuid": "4b1ecdfb-4d34-4d23-99be-87dd2982d94f",
+      "DisplayName": "DiscountManagement.Domain",
+      "ColorIndex": 13
+    },
+    "a9c705bf-2604-4580-9d1c-c198f4371146": {
+      "ProjectGuid": "a9c705bf-2604-4580-9d1c-c198f4371146",
+      "DisplayName": "InventoryManagement.Application",
+      "ColorIndex": 14
+    },
+    "7724d6df-5063-404e-ac4d-ae3317c0ce6f": {
+      "ProjectGuid": "7724d6df-5063-404e-ac4d-ae3317c0ce6f",
+      "DisplayName": "InventoryManagement.Domain",
+      "ColorIndex": 15
+    },
+    "f5524ae3-fe9a-40f7-8ad2-b490d6e63dde": {
+      "ProjectGuid": "f5524ae3-fe9a-40f7-8ad2-b490d6e63dde",
+      "DisplayName": "InventoryManagement.Application.Contract",
+      "ColorIndex": 0
+    },
+    "24f49eb7-9ba8-4721-a6b3-7b660c322ed5": {
+      "ProjectGuid": "24f49eb7-9ba8-4721-a6b3-7b660c322ed5",
+      "DisplayName": "ShopManagement.Infrastructure.AccountAcl",
+      "ColorIndex": 1
+    },
+    "f93dbb85-2709-4500-b6d4-40de62240255": {
+      "ProjectGuid": "f93dbb85-2709-4500-b6d4-40de62240255",
+      "DisplayName": "ShopManagement.Infrastructure.InventoryAcl",
+      "ColorIndex": 2
+    },
+    "b06cf986-b286-4d52-aa2c-e1e4ab86d72a": {
+      "ProjectGuid": "b06cf986-b286-4d52-aa2c-e1e4ab86d72a",
+      "DisplayName": "DiscountManagement.Application.contract",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 8
+  "NextColorIndex": 4
 }

@@ -2,7 +2,6 @@
 using BlogManagement.Application.Contracts.Article;
 using BlogManagement.Domain.ArticleAgg;
 using BlogManagement.Domain.ArticleCategoryAgg;
-using System;
 using System.Collections.Generic;
 
 namespace BlogManagement.Application

@@ -19,8 +19,8 @@ namespace AccountManagement.Domain.AccountAgg
         public Account(string name,string family,string email, string username, string password, string mobile,
             long roleId, string profilePhoto)
         {
-            Name = name;
-            Family = family;
+            Name = name ;
+            Family = family ;
             Email = email;
             Username = username;
             Password = password;

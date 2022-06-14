@@ -5,7 +5,6 @@ using ShopManagement.Application.Contracts.Slide;
 using ShopManagement.Domain.SlideAgg;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 
 namespace ShopManagement.Infrastructure.EFCore.Repository
 {

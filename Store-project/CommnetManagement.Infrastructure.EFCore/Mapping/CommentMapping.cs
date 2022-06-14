@@ -1,7 +1,6 @@
 ﻿using CommentManegment.Domain.CommentAgg;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Microsoft.EntityFrameworkCore.Metadata.Conventions;
 
 namespace CommnetManagement.Infrastructure.EFCore.Mapping
 {

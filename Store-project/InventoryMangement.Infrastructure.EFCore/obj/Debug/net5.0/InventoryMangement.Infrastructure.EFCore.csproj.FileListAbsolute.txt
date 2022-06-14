@@ -30,3 +30,9 @@ D:\Store project\Store-project\InventoryMangement.Infrastructure.EFCore\bin\Debu
 D:\Store project\Store-project\InventoryMangement.Infrastructure.EFCore\bin\Debug\net5.0\CommentManegment.Domain.dll
 D:\Store project\Store-project\InventoryMangement.Infrastructure.EFCore\bin\Debug\net5.0\CommentManagement.Application.Contracts.pdb
 D:\Store project\Store-project\InventoryMangement.Infrastructure.EFCore\bin\Debug\net5.0\CommentManegment.Domain.pdb
+D:\Store project\Store-project\InventoryMangement.Infrastructure.EFCore\bin\Debug\net5.0\AccountManagement.Application.Contracts.dll
+D:\Store project\Store-project\InventoryMangement.Infrastructure.EFCore\bin\Debug\net5.0\AccountManagement.Domain.dll
+D:\Store project\Store-project\InventoryMangement.Infrastructure.EFCore\bin\Debug\net5.0\AccountMangement.Infrastructure.EFCore.dll
+D:\Store project\Store-project\InventoryMangement.Infrastructure.EFCore\bin\Debug\net5.0\AccountManagement.Application.Contracts.pdb
+D:\Store project\Store-project\InventoryMangement.Infrastructure.EFCore\bin\Debug\net5.0\AccountManagement.Domain.pdb
+D:\Store project\Store-project\InventoryMangement.Infrastructure.EFCore\bin\Debug\net5.0\AccountMangement.Infrastructure.EFCore.pdb

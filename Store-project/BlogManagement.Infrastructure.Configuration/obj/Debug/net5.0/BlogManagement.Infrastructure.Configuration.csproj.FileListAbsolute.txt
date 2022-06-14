@@ -47,3 +47,9 @@ D:\Store project\Store-project\BlogManagement.Infrastructure.Configuration\bin\D
 D:\Store project\Store-project\BlogManagement.Infrastructure.Configuration\bin\Debug\net5.0\ShopManagement.Application.Contracts.pdb
 D:\Store project\Store-project\BlogManagement.Infrastructure.Configuration\bin\Debug\net5.0\ShopManagement.Domain.pdb
 D:\Store project\Store-project\BlogManagement.Infrastructure.Configuration\bin\Debug\net5.0\ShopManagement.Infrastructure.EFCore.pdb
+D:\Store project\Store-project\BlogManagement.Infrastructure.Configuration\bin\Debug\net5.0\AccountManagement.Application.Contracts.dll
+D:\Store project\Store-project\BlogManagement.Infrastructure.Configuration\bin\Debug\net5.0\AccountManagement.Domain.dll
+D:\Store project\Store-project\BlogManagement.Infrastructure.Configuration\bin\Debug\net5.0\AccountMangement.Infrastructure.EFCore.dll
+D:\Store project\Store-project\BlogManagement.Infrastructure.Configuration\bin\Debug\net5.0\AccountManagement.Application.Contracts.pdb
+D:\Store project\Store-project\BlogManagement.Infrastructure.Configuration\bin\Debug\net5.0\AccountManagement.Domain.pdb
+D:\Store project\Store-project\BlogManagement.Infrastructure.Configuration\bin\Debug\net5.0\AccountMangement.Infrastructure.EFCore.pdb

@@ -3,13 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta name="author" content="Coderthemes">
 
     <link rel="shortcut icon" href="~/AdminTheme/images/favicon_1.ico">
 
-    <title>@ViewData["Title"] | MSP.Co</title>
-    <meta nam="keywords" con="" />
+    <title>@ViewData["Title"] | MSP.co Shop</title>
+    <meta name="keywords" content="" />
     <meta name="description" content="" />
 
     <!-- Base Css Files -->
@@ -47,12 +46,11 @@
     <!-- Begin page -->
     <div id="wrapper">
 
-        <!-- Top Bar Start -->
         <div class="topbar">
             <!-- LOGO -->
             <div class="topbar-left">
                 <div class="text-center">
-                    <a href="index.html" class="logo"><i class="md md-terrain"></i> <span>Moltran </span></a>
+                    <a href="index.html" class="logo"><i class="md md-terrain"></i> <span> DIGIMSP.co </span></a>
                 </div>
             </div>
             <!-- Button mobile view to collapse sidebar menu -->
@@ -67,21 +65,21 @@
                         </div>
                         <form class="navbar-form pull-left" role="search">
                             <div class="form-group">
-                                <input type="text" class="form-control search-bar" placeholder="Type here for search...">
+                                <input type="text" class="form-control search-bar" placeholder="جستجو ...">
                             </div>
                             <button type="submit" class="btn btn-search"><i class="fa fa-search"></i></button>
                         </form>
 
-                        <ul class="nav navbar-nav navbar-right pull-right">
+                        <!--<ul class="nav navbar-nav navbar-right pull-right">
                             <li class="dropdown hidden-xs">
                                 <a href="#" data-target="#" class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" aria-expanded="true">
                                     <i class="md md-notifications"></i> <span class="badge badge-xs badge-danger">3</span>
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-lg">
                                     <li class="text-center notifi-title">Notification</li>
-                                    <li class="list-group">
+                                    <li class="list-group">-->
                                         <!-- list item-->
-                                        <a href="javascript:void(0);" class="list-group-item">
+                                        <!--<a href="javascript:void(0);" class="list-group-item">
                                             <div class="media">
                                                 <div class="pull-left">
                                                     <em class="fa fa-user-plus fa-2x text-info"></em>
@@ -93,9 +91,9 @@
                                                     </p>
                                                 </div>
                                             </div>
-                                        </a>
+                                        </a>-->
                                         <!-- list item-->
-                                        <a href="javascript:void(0);" class="list-group-item">
+                                        <!--<a href="javascript:void(0);" class="list-group-item">
                                             <div class="media">
                                                 <div class="pull-left">
                                                     <em class="fa fa-diamond fa-2x text-primary"></em>
@@ -107,9 +105,9 @@
                                                     </p>
                                                 </div>
                                             </div>
-                                        </a>
+                                        </a>-->
                                         <!-- list item-->
-                                        <a href="javascript:void(0);" class="list-group-item">
+                                        <!--<a href="javascript:void(0);" class="list-group-item">
                                             <div class="media">
                                                 <div class="pull-left">
                                                     <em class="fa fa-bell-o fa-2x text-danger"></em>
@@ -124,22 +122,16 @@
                                                     </p>
                                                 </div>
                                             </div>
-                                        </a>
+                                        </a>-->
                                         <!-- last list item -->
-                                        <a href="javascript:void(0);" class="list-group-item">
+                                        <!--<a href="javascript:void(0);" class="list-group-item">
                                             <small>See all notifications</small>
                                         </a>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="hidden-xs">
-                                <a href="#" id="btn-fullscreen" class="waves-effect waves-light"><i class="md md-crop-free"></i></a>
-                            </li>
-                            <li class="hidden-xs">
-                                <a href="#" class="right-bar-toggle waves-effect waves-light"><i class="md md-chat"></i></a>
-                            </li>
                             <li class="dropdown">
-
+                                <a href="" class="dropdown-toggle profile" data-toggle="dropdown" aria-expanded="true"><img src="~/AdminTheme/assets/images/avatar-1.jpg" alt="user-img" class="img-circle"> </a>
                                 <ul class="dropdown-menu">
                                     <li><a href="javascript:void(0)"><i class="md md-face-unlock"></i> Profile</a></li>
                                     <li><a href="javascript:void(0)"><i class="md md-settings"></i> Settings</a></li>
@@ -147,19 +139,15 @@
                                     <li><a href="javascript:void(0)"><i class="md md-settings-power"></i> Logout</a></li>
                                 </ul>
                             </li>
-                        </ul>
+                        </ul>-->
                     </div>
                     <!--/.nav-collapse -->
                 </div>
             </div>
         </div>
-        <!-- Top Bar End -->
-        <!-- ========== Left Sidebar Start ========== -->
+
         <partial name="_Menu" />
-        <!-- Left Sidebar End -->
-        <!-- ============================================================== -->
-        <!-- Start right Content here -->
-        <!-- ============================================================== -->
+
         <div class="content-page">
             <!-- Start content -->
             <div class="content">
@@ -172,19 +160,22 @@
             </div> <!-- content -->
 
             <footer class="footer text-right">
-                2015 © Moltran.
+                2021 © شرکت مبتکران سازه پرشیا.
             </footer>
 
         </div>
-
-
     </div>
+
     <div id="MainModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
         <div class="modal-dialog">
             <div class="modal-content" id="ModalContent">
+
+
+
             </div>
         </div>
     </div>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/AdminTheme/assets/js/bootstrap.min.js"></script>
     <script src="~/AdminTheme/assets/js/waves.js"></script>
@@ -255,6 +246,5 @@
             toolbar_mode: 'floating',
         });
     </script>
-
 </body>
 </html>

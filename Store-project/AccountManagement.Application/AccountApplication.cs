@@ -49,7 +49,9 @@ namespace AccountManagement.Application
                 Name = account.Name,
                 Family=account.Family,
                 Email=account.Email,
-                Mobile = account.Mobile
+                Mobile = account.Mobile,
+                ProfilePhoto=account.ProfilePhoto,
+
             };
         }
 
@@ -100,8 +102,8 @@ namespace AccountManagement.Application
             if (account == null)
                 return operation.Failed(ApplicationMessages.WrongUserPass);
 
-            var result = _passwordHasher.Check(account.Password, command.Password);
-            if (!result.Verified)
+            var (Verified, NeedsUpgrade) = _passwordHasher.Check(account.Password, command.Password);
+            if (!Verified)
                 return operation.Failed(ApplicationMessages.WrongUserPass);
 
             var permissions = _roleRepository.Get(account.RoleId)
